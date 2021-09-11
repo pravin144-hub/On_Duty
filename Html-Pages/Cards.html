@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<title>Staff Page</title>
+<link rel="stylesheet" href="forms2.css">
+<style>
+    * {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body {
+    background-image: url(../images/Bg-4.jpg);
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+     background-size: cover;
+    display: grid;
+  }
+  h2{
+      text-align: center;
+      color: white;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div.card{border-style: solid;
+   background-color: #f1f1f1;
+    }
+
+ div.card1{
+  border-style: dashed;
+   background-color: #f1f1f1;
+ }
+ div.card2{
+  border-style: double;
+   background-color: #f1f1f1;
+ }
+ div.card3{
+  border-style: groove;
+   background-color: #f1f1f1;
+ }
+
+  .card,.card1,.card2,.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  #green{
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  #red{
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+</style>
+</head>
+<body>
+    <script>
+        function myfun(){
+            alert("OD request Accepted");
+        }
+        
+        function myfunc(){
+            alert("OD request Denied");
+        }
+        </script>
+<h2 style="color: black;">OD Request</h2>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>S.PravinKumar</h3>
+        <p>19CSR144</p>
+        <p>Project Presentation</p>
+        <button id="green" onclick="myfun()">Approve</button>
+        <button id="red" onclick="myfunc()">Discard</button>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card1" >
+          <h3>K.S.Ranjith</h3>
+          <p>19CSR153</p>
+          <p>Project Expo</p>
+          <button id="green" onclick="myfun()">Approve</button>
+          <button id="red" onclick="myfunc()">Discard</button>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card2">
+          <h3>S.Premnath</h3>
+          <p>19CSR148</p>
+          <p>Paper Presentation</p>
+          <button id="green" onclick="myfun()">Approve</button>
+          <button id="red" onclick="myfunc()">Discard</button>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card3" >
+          <h3>B.Ravichandran</h3>
+          <p>19CSR155</p>
+          <p>Code Debbuging</p>
+          <button id="green" onclick="myfun()">Approve</button>
+          <button id="red" onclick="myfunc()">Discard</button>
+      </div>
+    </div>
+  
+    
+  </div>
+  
+
+
+</body>
+</html>

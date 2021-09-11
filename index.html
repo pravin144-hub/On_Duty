@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <title>Register/Signup</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    h1{
+        color:rgb(0, 0, 0)
+    }
+
+
+    body{
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .wrapper{
+        position: relative;
+        width: 700px;
+        height: 500px;
+        overflow: hidden;
+        box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+    div.container{
+        border-style: solid;
+
+    }
+.container{
+    width: 700px;
+    height: 600px;
+    box-shadow: 0px 2px 4px #000;
+    background: #fff;
+    overflow: hidden;
+   
+}
+nav{
+    position: absolute;
+    top: 87%;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid gainsboro;
+    z-index: 0;
+    background: black;
+}
+nav a{
+    padding: 10px;
+    text-decoration: dotted;
+    color: rgb(160, 153, 153);
+    font-size: 1.4rem;
+    
+}
+.link{
+    transition: 0.3 all;
+}
+.content{
+    display: flex;
+    width: 800px;
+    height: 77%;
+}
+.item{
+    width: 600px;
+    color: #000;
+    background-image: url(images/Bg-4.jpg);
+    display: flex;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.item2{
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+}
+pre{
+   font-weight: 300; 
+}
+#bgvideo {
+  position:absolute;
+  right: 0%;
+  
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+        </style>
+    </head>
+
+    <body>
+        <video autoplay muted loop id="bgvideo"><source src="images/Bg-video.mp4" type="video/mp4"></video>
+    
+        <div class="wrapper">
+            <div class="container">
+                <nav>
+                    <a href="Html-Pages/staff.html" class="link1">Staff's Login</a>
+                    <a href="Html-Pages/student.html" class="link2">Student's Login</a>
+                </nav>
+
+                <div class="content">
+
+                    <div class="item item1" id="Od">
+                        <h1>Online On-Duty(OD) Request Form</h1>
+                    </div>
+
+                    <div class=" item2" id="info">
+                        <h1 >About</h1>
+                            <h5>Easy Way To Request OD(On-Duty)</h5>      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Student Registration
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            * {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+  }
+  body{
+    background-image: url(../images/Bg-5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size: cover;
+  }
+.form {
+    position: relative;
+    z-index: 1;
+    background-color:#0E3A4E;
+    width: 550px;
+    margin: 0 auto 100px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  legend{
+    color: rgb(240, 81, 24);
+  }
+  button {
+    background-color:rgb(240, 81, 24);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  input {
+    font-family: 'Josefin Sans', sans-serif;
+    background: #f2f2f2;
+    width: fit-content;
+    border-style: double;
+    border-color: black;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  input[type="radio"]{
+      color: whitesmoke;
+  }
+  input[type="text"]{
+      color: whitesmoke;
+      width:350px;
+  }
+  input[type="number"]{
+      color: whitesmoke;
+      width:350px;
+  }
+  input[type="email"]{
+      color: whitesmoke;
+      width:350px;
+  }
+  input[type="date"]{
+      color: black;
+      width:350px;
+  }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <form class="od">
+                <fieldset>
+                    <legend >On-Duty Form</legend>
+                <input type="text" placeholder="Student Name" maxlength="20" size="20" required><br>
+                <input type="text" placeholder="Student Roll Number" required maxlength="20" size="20"><br>
+                <input type="number" placeholder="Student Phone Number" pattern="[6-9]{1}[0-9]{9}" required><br>
+                <input type="email" placeholder="Student Email I'd" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+                <label for='Dept' style="font-family: 'Courier New', Courier, monospace;color: white;"><b>Select Your Department</b></label>
+                <select name="Dept" id="Dept" >
+                    <optgroup label="Circuit Department">
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="EIE">EIE</option>
+                    </optgroup>
+                    <optgroup label="Non-Circuit Department">
+                        <option value="FT">FT</option>
+                        <option value="CHEM">CE</option>
+                        <option value="MECH">MECH</option>
+                    </optgroup>
+                </select><br>
+                <h4>Year</h4>
+                <input type="radio" id="i" name="year" value="i" checked="checked">
+                <label for="i">I</label>
+                <input type="radio" id="ii" name="year" value="ii">
+                <label for="ii">II</label>
+                <input type="radio" id="iii"name="year" value="iii">
+                <label for="iii">III</label>
+                <input type="radio" id="iv" name="year" value="iv">
+                <label for="iv">IV</label>
+                <h4>Section</h4>
+                <input type="radio" id="A" name="sec" value="A">
+                <label for="A">A</label>
+                <input type="radio" id="B" name="sec" value="B">
+                <label for="B">B</label>
+                <input type="radio" id="C" name="sec" value="C">
+                <label for="C">C</label>
+                <input type="radio" id="D" name="sec" value="D">
+                <label for="D">D</label><br>
+                <br>
+                <label for='Events' style="font-family: 'Courier New', Courier, monospace;color: black;"><b>Type of Programme attended</b></label>
+                <select name="Events" id="Events">
+                        <optgroup style="color: black;" label="Technical Events">
+                            <option value="Paper">Paper Presentation</option>
+                            <option value="Project">Project Presentation</option>
+                            <option value="Work">Work Shop</option>
+                            <option value="NConference">National Conference</option>
+                        </optgroup>
+                        <optgroup label="Other Technica Events">
+                            <option value="Quiz">Quiz</option>
+                            <option value="Debugging">Code Debbuging</option>
+                            <option value="Coding">Coding Event</option>
+                            <option value="Hackathons">Hackathon</option>
+                        </optgroup>
+                        <optgroup label="Extra Curricular" >
+                            <option value="Cultural">Cultural Events</option>
+                            <option value="Sport">Sports</option>
+                        </optgroup>
+                </select><br>
+                <h4>Place of Programme Attended(Institution)</h4>
+                <input type="text" placeholder="Institution Name" maxlength="30" size="30" required>
+                <h4>Date(s) of Programme attended (From date)</h4>
+                <input type="date" placeholder="From Date" min="2019-01-01" max="2022-01-01" required>
+                <h4>Date(s) of Programme attended (To date)</h4>
+                <input type="date" placeholder="To Date"  >
+                <h4>Title of The Programme</h4>
+                <input type="text" placeholder="Title of The Programme" required>
+                <h4>Prize Details</h4>
+                <input type="radio" id="prize1" name="prize">
+                <label for="prize1">1<sub>st</sub></label>
+                <input type="radio" id="prize2" name="prize">
+                <label for="prize2">2<sub>nd</sub></label>
+                <input type="radio" id="prize3" name="prize">
+                <label for="prize3">3<sub>rd</sub></label>
+                <input type="radio" id="prize4" name="prize">
+                <label for="prize4">4<sub>th</sub></label>
+                <input type="radio" id="noprize" name="prize" checked="checked">
+                <label for="noprize" >Participation Only</label>
+                <h4>Upload Certificate Proof</h4>
+                <input type="file" multiple required><br>
+                <label for='staff' style="font-family: 'Courier New', Courier, monospace;color: white;"><b>select Your Respective class Advisor</b></label>
+                <select name="Staff" id="staff">
+                    <option value="John">John(ID:001)</option>
+                    <option value="Prem">Ram(ID:002)</option>
+                    <option value="Pravin">Priya(ID:003)</option>
+                    <option value="Dinesh">siva(ID:004)</option>
+                </select><br>
+                <br>
+                <input type="checkbox" id="check" >
+                <label for="check"  style="color: black;">Send a Copy to my Mail</label>
+                <br><br>
+                <button onclick="myFunction()">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <script>
+             function myFunction() {
+              alert("Your OD Form Is Submitted.It will Be verified By your Respective class Advisor");
+            }
+
+            let btnClear = document.querySelector('button');
+            let inputs = document.querySelectorAll('input');
+            btnClear.addEventListener('click',() =>{
+	        inputs.forEach(input => input.value = '')
+            });
+        </script>
+    </body>
+</html>

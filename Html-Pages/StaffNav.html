@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Josefin Sans", sans-serif;
+            background-image: url(../images/Bg-1.jpg);
+            background-repeat: no-repeat;
+      background-attachment: fixed;
+     background-size: cover;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        h3 {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        
+        span {
+            font-size: 28px;
+            font-family: "Josefin Sans", sans-serif;
+        }
+                
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #0E3A4E;
+        }
+        
+        ul.topnav li {
+            float: right;
+        }
+        
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 33px;
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+        
+        ul.topnav li a:hover:not(.active) {
+            color: rgb(240, 81, 24);
+        }
+        
+        ul.topnav li.left {
+            float: left;
+            margin-left: 3%;
+            margin-top: 15px;
+            font-size: 40px !important;
+            color: rgb(240, 81, 24) !important;
+            padding-bottom: 1%;
+        }
+        
+
+
+        .text-block1 {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 14px;
+    }
+
+    
+
+    #orange{
+    background-color:rgb(240, 81, 24);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: all 0.3 ease;
+    }
+    
+    #orange:hover{
+        background-color:rgb(196, 92, 54);
+    }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="bg-image" id="home">
+            <ul class="topnav">
+               <li><a href="staff.html">Log-Out</a></li>
+                <li><a href="Cards.html" >Check OD Request</a></li>
+    
+                <li class="left">
+                   <i class="far fa-laugh-beam"></i><span>n-Duty</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="text-block1">
+        <h4>Overall Student's Attendance</h4>
+        <a><button id="orange">Attendance</button></a>
+        <br>
+      </div>
+   
+   
+</body>
+
+</html>
